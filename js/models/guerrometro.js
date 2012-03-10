@@ -1,6 +1,6 @@
 App.Models.Guerrometro = Backbone.Model.extend({
 	url : '/guerrometro',
-	pollingInterval : 10000,
+	pollingInterval : 1000,
 	
 	defaults : {
 		orc : 50,
@@ -11,8 +11,14 @@ App.Models.Guerrometro = Backbone.Model.extend({
 		var self = this;
 		
 		setInterval(function(){
-			self.fetch();
+			self.simulateFetch();
 		}, this.pollingInterval);
+	},
+	
+	simulateFetch : function(){
+		var orc = Math.round(Math.random()*100);
+		
+		this.set({orc : orc, human : 100-orc});
 	},
 	
 	orc : function(){
