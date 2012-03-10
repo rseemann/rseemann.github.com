@@ -1,0 +1,3 @@
+[submodule "teste"]
+	path = teste
+	url = git@github.com:rseemann/teste_js.git
