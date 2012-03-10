@@ -1,6 +1,6 @@
 UT.Login.Content = new UT({
-	Jogo : "logincontent/jogo",
-	Mercado : "logincontent/mercado",
-	Midia : "logincontent/midia",
-	Comunidade : "logincontent/comunidade"
+	Jogo : "loginContent/jogo",
+	Mercado : "loginContent/mercado",
+	Midia : "loginContent/midia",
+	Comunidade : "loginContent/comunidade"
 });
